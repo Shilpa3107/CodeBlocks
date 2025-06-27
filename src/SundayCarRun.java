@@ -13,6 +13,6 @@ public class SundayCarRun {
               oddSum += dig;
             num = num/10;
         }
-        System.out.println((evenSum%4==0 || oddSum%3==0)?"Run on sunday":"Not run on sunday");
+        System.out.println((evenSum>0 && evenSum%4==0 ||  oddSum >0 && oddSum%3==0)?"Run on sunday":"Not run on sunday");
     }
 }
