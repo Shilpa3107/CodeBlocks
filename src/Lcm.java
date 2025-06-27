@@ -1,6 +1,10 @@
+import java.util.Scanner;
 public class Lcm {
     public static void main(String args[]){
-        int a =7, b = 8;
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        sc.close();
         int i = 2;
         int hcf = 1;
         while(i<Math.min(a,b)){
