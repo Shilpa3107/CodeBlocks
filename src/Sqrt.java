@@ -7,9 +7,9 @@ public class Sqrt {
         int start = 0, end = x-1;
         while(start <=end){
             int mid = start+(end-start)/2;
-            if((long)mid*mid == x)
+            if((long)((long)mid*(long)mid) == x)
               return mid;
-            else if((long)mid*mid > x)
+            else if((long)((long)mid*(long)mid) > x)
                end = mid-1;
             else 
                start = mid+1;
