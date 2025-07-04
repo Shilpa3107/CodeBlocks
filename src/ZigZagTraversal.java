@@ -11,9 +11,10 @@ public class ZigZagTraversal {
             }
             }
             else {
-              j = arr[0].length;
-              while(j-->0){
+              j = arr[0].length-1;
+              while(j>=0){
                 System.out.print(arr[i][j]+" ");
+                j--;
             }
             }
         }
