@@ -1,11 +1,17 @@
 public class QuickSort{
     public static void main(String args[]){
         int arr[] = {7,5,1,3,9,4};
-        int pivot = find(0,arr.length-1,arr);
-        int p = find(0,pivot,arr);
-        int e = find(pivot+1,arr.length-1,arr);
+        sort(0,arr.length-1,arr);
+    
         for(int n : arr)
           System.out.print(n+" ");
+    }
+    public static void sort(int start, int end, int arr[]){
+        if(start > end)
+          return;
+          int p = find(start,end,arr);
+          sort(start,p-1,arr);
+          sort(p+1,end,arr);
     }
     public static int find(int start, int end, int arr[]){
 
